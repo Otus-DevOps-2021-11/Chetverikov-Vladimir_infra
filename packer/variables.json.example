@@ -1,6 +1,6 @@
 {
   "folder_id": "testfolder123",
-  "service_account_key_file": "testkey.json",
+  "service_account_key_file": "fakekey.json",
   "source_image_id": "testimageid123",
   "image_family": "reddit-base"
 }
