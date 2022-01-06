@@ -1,14 +1,3 @@
-# Без определения источника для yandex выдает ошибку.
-# По умолчанию стучится в hashicorp/yandex вместо yandex-cloud/yandex, нужно переопределить
-# https://github.com/yandex-cloud/terraform-provider-yandex/issues/157
-terraform {
-  required_providers {
-    yandex = {
-      source = "yandex-cloud/yandex"
-    }
-  }
-}
-
 provider "yandex" {
   service_account_key_file = var.service_account_key_file
   cloud_id                 = var.cloud_id
