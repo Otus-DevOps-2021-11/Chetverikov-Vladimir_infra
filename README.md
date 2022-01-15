@@ -99,3 +99,17 @@ testapp_port = 9292
 - добавлены образы packer для app и db
 - конфигурация terraform разбита на модули
 - с использованием модулей сделаны кофигурации окружений stage и prod
+
+## ДЗ Ansible-1
+
+К вопросу что изменилось после выполения команды 
+
+`ansible-playbook clone.yml` 
+
+после 
+
+`ansible app -m command -a 'rm -rf ~/reddit'`
+
+Результат `appserver: ok=2 changed=1 unreachable=0 failed=0 skipped=0 rescued=0 ignored=0`.
+Изменения были на одном хосте, поэтому повторный запуск плейбука восстановил необходимое состояние.
+
