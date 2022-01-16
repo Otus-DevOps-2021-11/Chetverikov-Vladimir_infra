@@ -1,0 +1,5 @@
+[app] #группа хостов
+appserver ansible_host=62.84.125.48
+
+[db]
+dbserver ansible_host=62.84.127.128
