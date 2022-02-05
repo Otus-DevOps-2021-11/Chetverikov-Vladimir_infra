@@ -28,7 +28,7 @@
     - name: Add unit file for Puma
       copy:
         src: files/puma.service
-        dest: /etc/systemd/system/puma.service
+        dest: /etc/systemd/system/puma.service.j2
       notify: reload puma
 
     - name: Add config to DB connection
