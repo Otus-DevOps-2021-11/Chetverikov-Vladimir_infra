@@ -18,7 +18,7 @@
       become: true
       copy:
         src: files/puma.service
-        dest: /etc/systemd/system/puma.service
+        dest: /etc/systemd/system/puma.service.j2
       tags: app-tag
       notify: reload puma
 
